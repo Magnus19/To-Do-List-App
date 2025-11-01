@@ -24,6 +24,7 @@ const toggleTaskById = (id, completed) => {
 }
 
 const renderTaskContainers = () => {
+    // Rerender entire task containers
     appBody.innerHTML = "";
 
     list.forEach(task => {
@@ -89,7 +90,7 @@ appBody.addEventListener("change", (event) => {
 renderTaskContainers();
 
 
-
+// Original code with no modular architecture intended
 
 // submitForm.addEventListener("submit", (event) => {
 //     event.preventDefault();
